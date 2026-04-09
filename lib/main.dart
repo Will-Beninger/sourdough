@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sourdough/calculator/calculator_screen.dart';
 
 void main() {
   runApp(const SourdoughApp());
@@ -19,27 +20,7 @@ class SourdoughApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const BlankScreen(),
-    );
-  }
-}
-
-class BlankScreen extends StatelessWidget {
-  const BlankScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          'Vibecoded Sourdough App',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.w600,
-            letterSpacing: 1.2,
-          ),
-        ),
-      ),
+      home: const CalculatorScreen(),
     );
   }
 }
